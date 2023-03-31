@@ -9,7 +9,7 @@ const Header = () => {
                 <nav class="container-fluid d-flex justify-content-between">
                     <a class="navbar-brand fs-3 fw-bold">Knowledge Cafe</a>
                     <form class="d-flex" role="search">
-                       <img className="img-fluid p-2" style={{ width: '15%' }} src={logo} alt="" />
+                       <img className="img-fluid p-2" style={{ height: 60 , width: 60 }} src={logo} alt="" />
                     </form>
                 </nav>
             </nav>

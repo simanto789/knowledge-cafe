@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "author": "Jane Smith",
+    "title": "5 Tips for Starting Your Own Business",
+    "images":
+      "https://img.freepik.com/free-photo/flat-lay-business-concept_53876-24738.jpg?w=826&t=st=1680202370~exp=1680202970~hmac=aeed6a76940895823703dfa6a45e98502f2907a99c5fa9b760187e74e41a3ed9",
+      
+    "authorImage": "https://cdn-icons-png.flaticon.com/512/1251/1251841.png?w=740&t=st=1680203420~exp=1680204020~hmac=81a5d6fffe2dd99c82d16b0af283c8955ab54310093d596c74c0062de7ede3de",
+    "publishDate": "2022-02-10"
+  },
+  {
+    "id": 2,
+    "author": "John Doe",
+    "title": "The Benefits of Eating Healthy",
+    "images": 
+      "https://img.freepik.com/free-vector/flat-background-world-vegetarian-day_23-2149612310.jpg?w=740&t=st=1680202999~exp=1680203599~hmac=2071a45710c5356420f1c3cf82b7c33937dd5d9154ce43cd63fd1a0ceff7499f",
+    "authorImage": "https://cdn-icons-png.flaticon.com/512/727/727399.png?w=740&t=st=1680202766~exp=1680203366~hmac=73c5b468f73f1224db9787dcbb66b308fa0a14279f6feaa78f3cdae5782659b1",
+    "publishDate": "2022-03-15"
+  },
+  {
+    "id": 3,
+    "author": "Samantha Lee",
+    "title": "10 Easy DIY Home Decor Ideas",
+    "images": 
+      "https://img.freepik.com/free-vector/room-interior-composition-with-inside-view-living-room-with-soft-furniture-table-plants-decorations-vector-illustration_1284-75948.jpg?w=996&t=st=1680203177~exp=1680203777~hmac=66f67bc103b8bfc7b1197dbcc126993b9c3e4902d416976bc67233631535e664",
+    "authorImage": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?w=740&t=st=1680203574~exp=1680204174~hmac=d3d59310e9ba621a786eb51f423c8701fb5a864d3c7f2f575f7c41f385edb635",
+    "publishDate": "2022-04-20"
+  },
+  {
+    "id": 4,
+    "author": "Michael Johnson",
+    "title": "The Importance of Exercise for Mental Health",
+    "images":
+      "https://img.freepik.com/free-photo/young-attractive-slim-woman-doing-sport-exercises-morning-sunrise-beach-sports-wear-healthy-lifestyle-listening-music-earphones-making-yoga_285396-5512.jpg?w=740&t=st=1680203282~exp=1680203882~hmac=73eccf77eca24e49e801c027d938558add5ab06b179e4ba58e63e06e64e3ab9c",
+    "authorImage": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?w=740&t=st=1680203574~exp=1680204174~hmac=d3d59310e9ba621a786eb51f423c8701fb5a864d3c7f2f575f7c41f385edb635",
+    "publishDate": "2022-05-25"
+  }
+]
