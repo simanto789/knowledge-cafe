@@ -7,7 +7,19 @@ import Home from './components/Home/Home'
 import SideCart from './components/SideCart/SideCart'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [readTime,setReadTime]= useState("");
+  const handleReadTime = (time) => {
+  const previousReadTime =JSON.parse(localStorage.getItem("readTime"));
+  if(previousReadTime) {
+  const sum = previousReadTime + time;
+  localStorage.setItem("readTime",sum);
+  setReadTime(sum);
+  }
+  else {
+   localStorage.setItem("readTime",time);
+   setReadTime(time);
+  }
+};
 
   return (
     <div>
@@ -16,10 +28,10 @@ function App() {
         </div>
         <div className="main row">
            <div className="home-container col-md-8">
-            <Home></Home>
+            <Home handleReadTime = {handleReadTime}></Home>
            </div>
            <div className="sideCart col-md-4 card">
-            <SideCart></SideCart>
+            <SideCart readTime = {readTime}></SideCart>
            </div>
         </div>
     </div>

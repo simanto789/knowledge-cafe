@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleCard from '../SingleCard/SingleCard';
 
-const Home = () => {
+const Home = ({handleReadTime}) => {
       const [knowledges,setKnowledges]= useState([])
     useEffect(() => {
         fetch("fakeData.json")
@@ -17,7 +17,9 @@ const Home = () => {
             <div className="knowledge-container">
                     {
                     knowledges.map((knowledge)=>(
-                        <SingleCard knowledge = {knowledge}></SingleCard>
+                        <SingleCard 
+                        handleReadTime={handleReadTime}
+                        knowledge = {knowledge}></SingleCard>
                     ))
                 }
             </div>

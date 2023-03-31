@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const SingleCard = ({ knowledge }) => {
+const SingleCard = ({ knowledge, handleReadTime }) => {
 
     return (
         <div>
@@ -17,16 +17,16 @@ const SingleCard = ({ knowledge }) => {
                         </div>
                         <div>
                             <h5>{knowledge.author}</h5>
-                            <p>march 14 (4 days ago)</p>
+                            <p> {knowledge.publishDate} (4 days ago)</p>
                         </div>
                     </div>
                     <div>
-                        <p>5 min read <span> <FontAwesomeIcon icon={faBookmark} /></span> 
+                        <p>{knowledge.readTime} min read <span> <FontAwesomeIcon icon={faBookmark} /></span> 
                         </p>
                     </div>
                 </div>
                 <h3>{knowledge.title}</h3>
-                <button className='btn btn-success'>mark as read</button>
+                <button onClick={()=>handleReadTime(knowledge.readTime)} className='btn btn-success'>mark as read</button>
             </div>
         </div>
     );
