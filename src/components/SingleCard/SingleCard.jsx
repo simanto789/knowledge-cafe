@@ -5,16 +5,25 @@ const SingleCard = ({knowledge}) => {
     return (
         <div>
             <div className="knowledge-card card text-start">
-                    <div className="knowledge-poster">
-                        <img src={knowledge.images} style={{ height: 300 , width: 700 }} alt="" />
+                    <div className="knowledge-poster mb-3">
+                        <img src={knowledge.images} style={{ height: 340 , width: 740 }} alt="" />
                     </div>
-                    <h3>Name</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <div className="timeAndRating d-flex justify-content-around">
-                        <p>read time</p>
-                        <p>rating</p>
-                    </div>
-                    <p>mark as read</p>
+                    <div className="author-container d-flex justify-content-between">
+                      <div className='author-container d-flex gap-2'>
+                            <div>
+                            <img src={knowledge.authorImage} style={{ height: 50 , width: 50 }} alt="" />
+                            </div>
+                            <div>
+                            <h5>{knowledge.author}</h5>
+                            <p>march 14 (4 days ago)</p>
+                            </div>
+                            </div>
+                        <div>
+                            <p>5 mnt read</p>
+                        </div>
+                     </div>
+                    <h3>{knowledge.title}</h3>
+                    <button>mark as read</button>
                 </div>
         </div>
     );
