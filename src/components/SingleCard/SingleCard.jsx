@@ -22,7 +22,7 @@ const SingleCard = ({ knowledge, handleReadTime, handleblogTime }) => {
                     </div>
                     <div>
                         <p>{knowledge.readTime} min read 
-                        <span onClick={()=>handleblogTime(knowledge.count)}> <FontAwesomeIcon icon={faBookmark} /></span> 
+                        <span onClick={()=>handleblogTime(knowledge.count)} style ={{cursor : "pointer"}}> <FontAwesomeIcon icon={faBookmark} /></span> 
                         </p>
                     </div>
                 </div>
