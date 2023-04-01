@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const SingleCard = ({ knowledge, handleReadTime }) => {
+const SingleCard = ({ knowledge, handleReadTime, handleblogTime }) => {
 
     return (
         <div>
@@ -21,12 +21,13 @@ const SingleCard = ({ knowledge, handleReadTime }) => {
                         </div>
                     </div>
                     <div>
-                        <p>{knowledge.readTime} min read <span> <FontAwesomeIcon icon={faBookmark} /></span> 
+                        <p>{knowledge.readTime} min read 
+                        <span onClick={()=>handleblogTime(knowledge.count)}> <FontAwesomeIcon icon={faBookmark} /></span> 
                         </p>
                     </div>
                 </div>
                 <h3>{knowledge.title}</h3>
-                <button onClick={()=>handleReadTime(knowledge.readTime)} className='btn btn-success'>mark as read</button>
+                <div onClick={()=>handleReadTime(knowledge.readTime)} style ={{cursor : "pointer"}}className='text-decoration-underline'>mark as read</div>
             </div>
         </div>
     );

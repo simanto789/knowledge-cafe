@@ -21,6 +21,20 @@ function App() {
    setReadTime(time);
   }
 };
+  const [blogTime,setblogTime]= useState("");
+  const handleblogTime = (bookmark) => {
+  const previousblogTime =JSON.parse(localStorage.getItem("blogTime"));
+  if(previousblogTime) {
+  const sum = previousblogTime + bookmark;
+  localStorage.setItem("blogTime",sum);
+  setblogTime(sum);
+  }
+  else {
+   localStorage.setItem("blogTime",bookmark);
+   setblogTime(bookmark);
+  }
+};
+  
 
   return (
     <div>
@@ -29,10 +43,12 @@ function App() {
         </div>
         <div className="main row">
            <div className="home-container col-md-8">
-            <Home handleReadTime = {handleReadTime}></Home>
+            <Home handleReadTime = {handleReadTime}
+            handleblogTime={handleblogTime}></Home>
            </div>
            <div className="sideCart col-md-4 card">
-            <SideCart readTime = {readTime}></SideCart>
+            <SideCart readTime = {readTime}
+            blogTime={blogTime}></SideCart>
            </div>
         </div>
         <div>
