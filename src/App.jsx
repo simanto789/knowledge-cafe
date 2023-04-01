@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import SideCart from './components/SideCart/SideCart'
+import Question from './components/Question/Question'
 
 function App() {
   const [readTime,setReadTime]= useState("");
@@ -33,6 +34,9 @@ function App() {
            <div className="sideCart col-md-4 card">
             <SideCart readTime = {readTime}></SideCart>
            </div>
+        </div>
+        <div>
+          <Question></Question>
         </div>
     </div>
   )

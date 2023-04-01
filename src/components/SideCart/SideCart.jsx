@@ -11,7 +11,7 @@ const SideCart = ({readTime}) => {
 
 return (
    <div>
-     <h5>spent time read :{time} </h5>   
+     <button className='w-100 btn btn-info opacity-75'>spent time read :{time} </button>   
    </div>
  );
 };
